@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical Fitness Workout</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    
+
+
+</head>
+<body>
+   
+    <header class="main-header">
+        <div class="header-container">
+          <div  class="logo">
+            FitNest<span class="highlight">Hub</span>
+          </div>
+          <div class="nav-container">
+            <ul class="main-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Health Condition</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item"><a href="../health/activewear.html" class="dropdown-link">Activewear</a></div>
+                        <div class="dropdown-item"><a href="../health/begginer.html" class="dropdown-link">Beginners</a></div>
+                        <div class="dropdown-item"><a href="../health/walking.html" class="dropdown-link">Walking</a></div>
+                        <div class="dropdown-item"><a href="../health/running.html" class="dropdown-link">Running</a></div>
+                        <div class="dropdown-item"><a href="../fitness/strength.html" class="dropdown-link">Strength</a></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Wellness</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item"><a href="../wellness/weightma.html" class="dropdown-link">Weight Management</a></div>
+                        <div class="dropdown-item"><a href="../wellness/nutrition.html" class="dropdown-link">Nutrition Facts</a></div>
+                        <div class="dropdown-item"><a href="../wellness/nutrionbas.html" class="dropdown-link">Nutrition Basics</a></div>
+                        <div class="dropdown-item"><a href="../wellness/diets.html" class="dropdown-link">Diets</a></div>
+                        <div class="dropdown-item"><a href="../wellness/mealplans.html" class="dropdown-link">Meal Plans</a></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Tools</a>
+                    <div class="dropdown-menu">
+                       
+                        <div class="dropdown-item"><a href="../tools/weightloss.html" class="dropdown-link">Weight Loss Calorie Goal</a></div>
+                        <div class="dropdown-item"><a href="../tools/daily.html" class="dropdown-link">Daily Calorie Burned</a></div>
+                        <div class="dropdown-item"><a href="../tools/calorieburned.html" class="dropdown-link">Calorie Burned by Activity</a></div>
+                        <div class="dropdown-item"><a href="../tools/pace.html" class="dropdown-link">Pace Calculator</a></div>
+                    </div>
+            
+                </li>
+                
+
+            </ul>
+        </div>
+        <div class="search-box">
+            <span class="icon"><i class="fas fa-search"></i></span>
+            <input type="text" id="searchInput" placeholder="Type to search..." oninput="searchArticle()" />
+            <button id="searchButton" onclick="searchArticle()">Find</button>
+            <ul id="resultsList"></ul>
+
+        </div>
+        </div>
+       
+      </header>
+
+      <div class="nav-container">
+        <ul class="fitness-nav">
+            <li class="nav-item">
+                <a href="../homepage/index.html" class="nav-link">Fitness</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/execiespage.html" class="nav-link">Exercise</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/cardio.html" class="nav-link">Cardio</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/strength.html" class="nav-link">StrengthTraining</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/yoga.html" class="nav-link">Yoga</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/holistic.html" class="nav-link">holisticfitness</a>
+            </li>
+        </ul>
+    </div>
+    <div class="section-header">
+        <h2>FEATURED</h2>
+        <hr>
+      </div>
+    <div class="container">
+        <div class="grid-container">
+            <!-- Main Feature Card -->
+          <a class="card wide" href="runningarc.html">
+            <div class="tag yellow">RUNNING</div>
+            <img src="running.webp" alt="Running Insoles">
+            <h2>How to Start Running
+
+            </h2>
+            <p class="author">By Sherwin Lucas, BSIT</p>
+          </a>
+            <a class="card" href="../health/walking.html">
+                <div class="tag">WALKING</div>
+                <img src="walekn g.jpg" alt="Walking">
+                <h3>The Health Benefits of Walking
+                </h3>
+                <p class="author">Sherwin Lucas, BSIT</p>
+              </a>
+          <!-- Card 1 -->
+          <a class="card" href="../tools/daily.html">
+            <div class="tag">DAILY CALORIES BURNED</div>
+            <img src="watch.jpg" alt="Calorie">
+            <h3>How to Figure Out How Many Calories You Should Burn Each Day
+            </h3>
+            <p class="author">Sherwin Lucas, BSIT</p>
+          </a>
+    
+          <a class="card" href="../fitness/execiespage.html">
+            <div class="tag">EXERCIES</div>
+            <img src="exercise.jpg" alt="Exercises">
+            <h3> 10 Exercises to Tone Every Inch of Your Body</h3>
+            <p class="author">By Sherwin Lucas, BSIT</p>
+          </a>
+        
+          
+          <a class="card" href="../health/activewear.html">
+            <div class="tag">ACTIVEWEAR</div>
+            <img src="top pics.webp" alt="Activewear">
+            <h3>The 6 Best Athletic Skorts to Sweat It Out in Style
+
+            </h3>
+            <p class="author">By Sherwin Lucas, BSIT</p>
+            </a>
+            <!-- Trending Sidebar -->
+          <div class="card trending">
+            <h3 class="trending-title">TRENDING</h3>
+            <ul>
+              <li><a href="../wellness/weightma.html">Weight Management Strategies: What to Do and What Not to Do</a></li>
+              <br>
+              <li><a href="../health/begginer.html">Exercise Tips for Beginners</a></li>
+              <br>
+              <li><a href="../health/running.html">Running Advice, Techniques, and Workouts</a></li>
+              <br>
+              <li><a href="../wellness/nutrition.html">How food fuels your Body</a></li>
+              <br>
+              <li><a href="../wellness/nutrionbas.html">Health Benefits for specific food and Beverages</a></li>
+              <br>
+              <li><a href="../wellness/diets.html">Diets That Are Supported by Science</a></li>
+              <br>
+              <li><a href="../fitness/holistic.html">A Transformative Approach to Mind, Body, and Spirit</a></li>
+            </ul>
+          </div>
+       
+          <a class="card" href="../fitness/strength.html">
+            <div class="tag">STRENGTH TRAINING</div>
+            <img src="weight.jpg" alt="Weight">
+            <h3>A Beginner’s Guide to Weight Training
+            </h3>
+            <p class="author">Sherwin Lucas, BSIT</p>
+          </a>
+          <a class="card" href="../tools/calorieburned.html">
+            <div class="tag">CALORIES BURNED BY ACTIVITY</div>
+            <img src="burn.webp" alt="Calories Burned">
+            <h3>How to Calculate Calories Burned During Exercise
+
+            </h3>
+            <p class="author">Sherwin Lucas, BSIT</p>
+
+            </p>
+          </a>
+        
+        </div>
+        </div>
+        <div class="tools-container">
+            <h1 class="section-title">Tools and Nutrition</h1>
+            <div class="tools-grid">
+                <a href="../wellness/diets.html" class="tool-card">Diets </a>
+                <a href="../wellness/mealplans.html" class="tool-card">Meal Plans</a>
+                <a href="../wellness/nutrition.html" class="tool-card">Nutrition Facts</a>
+                <a href="../tools/calorieburned.html" class="tool-card">Calories Burned by Activity</a>
+                <a href="../tools/daily.html" class="tool-card">Daily Calories Burned</a>
+                <a href="../tools/pace.html" class="tool-card">Walking and Running Pace Calculator</a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">FitNest</div>
+                
+                <div class="newsletter">
+                    <h2>Expert Wellness Picks and Advice to Your Inbox</h2>
+                    <form id="myForm">
+                    <div class="newsletter-input">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="button" onclick="sendEmail()">SIGN UP</button>
+                    </div>
+                    </form>
+                </div>
+                
+                <hr>
+                
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h3>Fitness Nutrition</h3>
+                        <ul class="footer-links">
+                            <li><a href="../tools/weightloss.html">Weight Loss</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <div class="footer-columns">
+                            <div class="footer-column">
+                                <h3>Meet Our Review Board</h3>
+                                <ul class="footer-links">
+                                    <li>Editorial Process</li>
+                                    <li>In the News</li>
+                                    <li>Terms of Service</li>
+                                    <li>Contact</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="footer-column">
+                                <h3>About Us</h3>
+                                <ul class="footer-links">
+                                    <li>Privacy Policy</li>
+                                    <li>Advertise</li>
+                                    <li>Careers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-follow">
+                    <h3>Follow Us</h3>
+                    <ul class="follow-links">
+                        <li>FREE</li>
+                        <li>BUSINESS</li>
+                        <li>CONTENTS</li>
+                        <li>SERVICES</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-disclaimer">
+                    FitNest IT's content is for informational and educational purposes only. My website is not intended to be a substitute for professional medical advice, diagnosis, or treatment.
+                </div>
+                
+                <div class="footer-copyright">
+                    © 2025 COLM Media, Inc. — All rights reserved
+                </div>
+                
+                <div class="footer-legal">
+                    COLM Media. FitNest workout is part of the COLM student publishing only.
+                </div>
+            </div>
+            
+        </footer>
+            
+       
+    
+
+    </body>
+    </html>
