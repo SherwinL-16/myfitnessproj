@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical Fitness Workout</title>
+    <link rel="stylesheet" href="pace.css">
+    <script src="../homepage/index.js" defer></script>
+</head>
+ <body>
+
+    <header class="main-header">
+        <div class="header-container">
+          <div class="logo">
+            FitNest<span class="highlight">Hub</span>
+          </div>
+          <div class="nav-container">
+            <ul class="main-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Health Condition</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item"><a href="../health/activewear.html" class="dropdown-link">Activewear</a></div>
+                        <div class="dropdown-item"><a href="../health/begginer.html" class="dropdown-link">Beginners</a></div>
+                        <div class="dropdown-item"><a href="../health/walking.html" class="dropdown-link">Walking</a></div>
+                        <div class="dropdown-item"><a href="../health/running.html" class="dropdown-link">Running</a></div>
+                        <div class="dropdown-item"><a href="../fitness/strength.html" class="dropdown-link">Strength</a></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Wellness</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item"><a href="../wellness/weightma.html" class="dropdown-link">Weight Management</a></div>
+                        <div class="dropdown-item"><a href="../wellness/nutrition.html" class="dropdown-link">Nutrition Facts</a></div>
+                        <div class="dropdown-item"><a href="../wellness/nutrionbas.html" class="dropdown-link">Nutrition Basics</a></div>
+                        <div class="dropdown-item"><a href="../wellness/diets.html" class="dropdown-link">Diets</a></div>
+                        <div class="dropdown-item"><a href="../wellness/mealplans.html" class="dropdown-link">Meal Plans</a></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Tools</a>
+                    <div class="dropdown-menu">
+                       
+                        <div class="dropdown-item"><a href="weightloss.html" class="dropdown-link">Weight Loss Calorie Goal</a></div>
+                        <div class="dropdown-item"><a href="daily.html" class="dropdown-link">Daily Calorie Burned</a></div>
+                        <div class="dropdown-item"><a href="calorieburned.html" class="dropdown-link">Calorie Burned by Activity</a></div>
+                        <div class="dropdown-item"><a href="pace.html" class="dropdown-link">Pace Calculator</a></div>
+                    </div>
+            
+                </li>
+            </ul>
+        </div>
+        <div class="search-box">
+          <span class="icon"><i class="fas fa-search"></i></span>
+          <input type="text" id="searchInput" placeholder="Type to search..." oninput="searchArticle()" />
+          <button id="searchButton" onclick="searchArticle()">Search</button>
+          <ul id="resultsList"></ul>
+      </div>
+
+      </div>
+        </div>
+        
+      </header>
+
+      <div class="nav-container">
+        <ul class="fitness-nav">
+            <li class="nav-item">
+                <a href="../homepage/index.html" class="nav-link">Fitness</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/execiespage.html" class="nav-link">Exercise</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/cardio.html" class="nav-link">Cardio</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/strength.html" class="nav-link">StrengTraining</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/yoga.html" class="nav-link">Yoga</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/holistic.html" class="nav-link">holisticfitness</a>
+            </li>
+        </ul>
+    </div>
+   
+
+    <div class="container">
+      <a href="../homepage/index.html" class="back-link">← Back to Fitness</a>
+        <h1 class="main-title">PACE CALCULATOR</h1>
+    
+        <section class="featured-section">
+          <h2 class="section-title">FEATURED</h2>
+          <section class="pace-calculator">
+            <div class="pace-header">
+              <span class="category-label">RUNNING</span>
+              <h1>How to Calculate Your Running Speed</h1>
+              <p class="subtitle">Learn Your Pace, Distance, and Time</p>
+              
+            </div>
+            <div class="pace-image">
+              <img src="running.webp" alt="Woman">
+            </div>
+            <div class="pace-benefits">
+                <h2>Why Use a Running Speed Calculator?</h2>
+                <p>
+                  A pace calculator can help you determine how long 
+                  <a href="../health/walking.html">walking</a> or <a href="../health/running.html">running</a> 
+                  a certain distance will take. Tracking your speed and how it changes over time 
+                  can help you gauge your performance and see if your fitness efforts are paying off.
+                </p>
+                <p>
+                  You may need to know your pace when registering for an event or race such as a 
+                 5K, 10K 
+                  half marathon</a>, or marathon.
+                  You can use running speed calculator or do the math yourself.
+                </p>
+                <div class="info">
+                    <h2>Running Pace Calculator</h2>
+                    <p>
+                      Your pace is expressed in 
+                      <a href="#">minutes per mile or minutes per kilometer</a>. 
+                      This is the time it would take you to walk or run 1 mile or 1 kilometer. 
+                      Race organizers use your pace to assign you to a 
+                      <a href="#">start corral</a> 
+                      with others racing at a similar pace. Note that many running races have a time limit equal to a 16-minute mile pace.
+                    </p>
+                  
+                    <p>
+                      To calculate your running pace, you will need to know the distance you have walked or run, and the time it took you to do so.
+                    </p>
+                  
+                    <div class="formula-box">
+                      <strong>Pace = Time / Distance</strong>
+                    </div>
+                  
+                    <p>
+                      Your running pace may not be a round number of minutes, so you will need to convert fractions of a minute to seconds. 
+                      Multiply the fraction of a minute by 60. For example, 0.5 minutes = 30 seconds.
+                    </p>
+                
+                
+                    <h2>Running Speed Calculator</h2>
+                    <p>
+                      Speed is the flip side of pace. It is the calculation of distance over time, 
+                      expressed in miles per hour or kilometers per hour. To calculate your running speed, 
+                      you will need to know the distance you walked or ran and the time it took you to do so.
+                    </p>
+                  
+                    <div class="formula-box">
+                      <strong>Speed = Distance / Time</strong>
+                    </div>
+                  
+                    <p>
+                      Or, if you have your pace, you can convert it to speed. Simply divide 60 by your pace.
+                    </p>
+                  
+                    <div class="formula-box">
+                      <strong>Speed = 60 / Pace</strong>
+                    </div>
+                  
+                    <p>
+                      When you aren't using whole hours in the calculation, convert the number to minutes, 
+                      then multiply the result by 60 minutes per hour to get miles per hour or kilometers 
+                      per hour. Below are some sample running speed calculations:
+                    </p>
+                  
+                    <ul>
+                      <li>Running 6 miles in 1 hour: 6 / 1 = 6 miles per hour (mph)</li>
+                      <li>Walking 6 miles in 2 hours: 6 / 2 = 3 mph</li>
+                      <li>
+                        Running a half marathon (13.1 miles) in 1.5 hours (90 minutes): 
+                        13.1 / 90 = .1455 × 60 = 8.73 mph
+                      </li>
+                    </ul>
+                </div>
+                <div class="verywell-note">
+                    <h2>Tips for you!</h2>
+                    <p>
+                      You can increase your walking or running speed with proper technique and training. 
+                      A pace calculator can provide you with reasonable estimates of your overall performance. 
+                      Remember that these are just best guesses, and you may not perform at the same pace over 
+                      all distances or at different training sessions or races. Other factors will influence 
+                      your pace on a given day.
+                    </p>
+                </div>
+
+
+            </div>
+              
+
+
+
+
+
+          </section>
+          
+        </section>
+      </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">FitNest</div>
+                
+                <div class="newsletter">
+                    <h2>Expert Wellness Picks and Advice to Your Inbox</h2>
+                    <div class="newsletter-input">
+                        <input type="email" placeholder="Enter your email">
+                        <button>SIGN UP</button>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h3>Fitness Nutrition</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Weight Loss</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <div class="footer-columns">
+                            <div class="footer-column">
+                                <h3>Meet Our Review Board</h3>
+                                <ul class="footer-links">
+                                    <li><a href="#">Editorial Process</a></li>
+                                    <li><a href="#">In the News</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="footer-column">
+                                <h3>About Us</h3>
+                                <ul class="footer-links">
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Advertise</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-follow">
+                    <h3>Follow Us</h3>
+                    <ul class="follow-links">
+                        <li><a href="#">FREE</a></li>
+                        <li><a href="#">BUSINESS</a></li>
+                        <li><a href="#">CONTENTS</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                    </ul>
+                </div>
+                
+              
+                
+                <div class="footer-copyright">
+                    © 2025 COLM Media, Inc. — All rights reserved
+                </div>
+                
+                <script src="fitness.js"></script>
+            </div>
+        </footer>
+            
+            
+    
+
+    </body>
+    </html>
+
+
+
+
+
+ </body>
+</html>

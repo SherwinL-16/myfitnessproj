@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical Fitness Workout</title>
+    <link rel="stylesheet" href="mealplan.css">
+    <script src="../homepage/index.js" defer></script>
+</head>
+ <body>
+
+    <header class="main-header">
+        <div class="header-container">
+          <div class="logo">
+            FitNest<span class="highlight">Hub</span>
+          </div>
+          <div class="nav-container">
+            <ul class="main-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Health Condition</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item"><a href="../health/activewear.html" class="dropdown-link">Activewear</a></div>
+                        <div class="dropdown-item"><a href="../health/begginer.html" class="dropdown-link">Beginners</a></div>
+                        <div class="dropdown-item"><a href="../health/walking.html" class="dropdown-link">Walking</a></div>
+                        <div class="dropdown-item"><a href="../health/running.html" class="dropdown-link">Running</a></div>
+                        <div class="dropdown-item"><a href="../fitness/strength.html" class="dropdown-link">Strength</a></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Wellness</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item"><a href="weightma.html" class="dropdown-link">Weight Management</a></div>
+                        <div class="dropdown-item"><a href="nutrition.html" class="dropdown-link">Nutrition Facts</a></div>
+                        <div class="dropdown-item"><a href="nutrionbas.html" class="dropdown-link">Nutrition Basics</a></div>
+                        <div class="dropdown-item"><a href="diets.html" class="dropdown-link">Diets</a></div>
+                        <div class="dropdown-item"><a href="mealplans.html" class="dropdown-link">Meal Plans</a></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Tools</a>
+                    <div class="dropdown-menu">
+                       
+                        <div class="dropdown-item"><a href="../tools/weightloss.html" class="dropdown-link">Weight Loss Calorie Goal</a></div>
+                        <div class="dropdown-item"><a href="../tools/daily.html" class="dropdown-link">Daily Calorie Burned</a></div>
+                        <div class="dropdown-item"><a href="../tools/calorieburned.html" class="dropdown-link">Calorie Burned by Activity</a></div>
+                        <div class="dropdown-item"><a href="../tools/pace.html" class="dropdown-link">Pace Calculator</a></div>
+                    </div>
+            
+                </li>
+            </ul>
+        </div>
+        <div class="search-box">
+            <span class="icon"><i class="fas fa-search"></i></span>
+            <input type="text" id="searchInput" placeholder="Type to search..." oninput="searchArticle()" />
+            <button id="searchButton" onclick="searchArticle()">Search</button>
+            <ul id="resultsList"></ul>
+        </div>
+
+      </div>
+        </div>
+        
+      </header>
+
+      <div class="nav-container">
+        <ul class="fitness-nav">
+            <li class="nav-item">
+                <a href="../homepage/index.html" class="nav-link">Fitness</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/execiespage.html" class="nav-link">Exercise</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/cardio.html" class="nav-link">Cardio</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/strength.html" class="nav-link">StrengTraining</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/yoga.html" class="nav-link">Yoga</a>
+            </li>
+            <li class="nav-item">
+                <a href="../fitness/holistic.html" class="nav-link">holisticfitness</a>
+            </li>
+        </ul>
+    </div>
+   
+
+    <div class="container">
+      <a href="../homepage/index.html" class="back-link">← Back to Fitness</a>
+        <h1 class="main-title">MEAN PLANS</h1>
+    
+        <section class="featured-section">
+          <h2 class="section-title">FEATURED</h2>
+
+          
+          <section id="meal-plan-section">
+            <div class="meal-plan-header">KEY TERMS</div>
+            <div class="meal-plan-tabs">
+              <button class="tab active" onclick="showPlan(0)">Keto meal plan</button>
+              <button class="tab" onclick="showPlan(1)">Mediterranean diet meal plan</button>
+              <button class="tab" onclick="showPlan(2)">Whole 30 meal plan</button>
+            </div>
+          
+            <div class="meal-plan-content active">
+              <h3>Keto meal plan</h3>
+              <p>A <strong>ketogenic</strong>, or "keto," meal plan outlines a way of eating that is very low in carbs and high in fat. You consume about 75% of calories from fat, 5% from carbs, and 20% from protein.</p>
+              <p>This can promote weight loss, but it's considered highly restrictive and not suitable for everyone.</p>
+              <p><strong>Learn More:</strong></p>
+            </div>
+          
+            <div class="meal-plan-content">
+              <h3>Mediterranean diet meal plan</h3>
+              <p>The <strong>Mediterranean diet</strong> emphasizes vegetables, fruits, fish, whole grains, and healthy fats like olive oil. It’s well-studied and supports heart health.</p>
+              <p>Meals often include grilled fish, salads, legumes, and nuts.</p>
+              <p><strong>Learn More:</strong></p>
+            </div>
+          
+            <div class="meal-plan-content">
+              <h3>Whole 30 meal plan</h3>
+              <p>The <strong>Whole 30</strong> plan removes sugar, alcohol, grains, legumes, soy, and dairy for 30 days. It helps identify food sensitivities and encourages whole foods.</p>
+              <p>After 30 days, foods are slowly reintroduced to test their effects on your body.</p>
+              <p><strong>Learn More:</strong></p>
+            </div>
+          </section>
+          
+          
+          
+        </section>
+      </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">FitNest</div>
+                
+                <div class="newsletter">
+                    <h2>Expert Wellness Picks and Advice to Your Inbox</h2>
+                    <div class="newsletter-input">
+                        <input type="email" placeholder="Enter your email">
+                        <button>SIGN UP</button>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h3>Fitness Nutrition</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Weight Loss</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <div class="footer-columns">
+                            <div class="footer-column">
+                                <h3>Meet Our Review Board</h3>
+                                <ul class="footer-links">
+                                    <li><a href="#">Editorial Process</a></li>
+                                    <li><a href="#">In the News</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="footer-column">
+                                <h3>About Us</h3>
+                                <ul class="footer-links">
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Advertise</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-follow">
+                    <h3>Follow Us</h3>
+                    <ul class="follow-links">
+                        <li><a href="#">FREE</a></li>
+                        <li><a href="#">BUSINESS</a></li>
+                        <li><a href="#">CONTENTS</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                    </ul>
+                </div>
+                
+              
+                
+                <div class="footer-copyright">
+                    © 2025 COLM Media, Inc. — All rights reserved
+                </div>
+                
+               
+            </div>
+        </footer>
+            
+            <script src="meanplan.js"></script>
+    
+
+    </body>
+    </html>
+
+
+
+
+
+ </body>
+</html>
